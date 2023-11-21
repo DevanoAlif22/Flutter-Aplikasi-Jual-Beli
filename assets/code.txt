@@ -1,0 +1,550 @@
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: ListView(
+          children: <Widget>[
+            Container(
+              width: 40,
+              height: 60,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                      'assets/logoo.png'), // Sesuaikan dengan path gambar Anda
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    padding:
+                        EdgeInsets.symmetric(vertical: 14.0, horizontal: 75),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(135, 73, 36, 1),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Text(
+                      "ALL PRODUCT",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Roboto',
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/dress1.png',
+                              width: 125.0,
+                              height: 125.0,
+                            ),
+                            Container(
+                              width: 125.0, // Sesuaikan dengan lebar gambar
+                              child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text("Model Dress 1"),
+                                      Container(
+                                        width: 120.0,
+                                        child: Align(
+                                            alignment: Alignment.topLeft,
+                                            child: OutlinedButton(
+                                                onPressed: null,
+                                                style: OutlinedButton.styleFrom(
+                                                    // Warna latar belakang transparan menggunakan nilai opasitas 0.0
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16.0),
+                                                    ),
+                                                    backgroundColor:
+                                                        Color.fromRGBO(
+                                                            135, 73, 36, 1)),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 15,
+                                                      height: 15,
+                                                      decoration: BoxDecoration(
+                                                        image: DecorationImage(
+                                                          image: AssetImage(
+                                                              'assets/uang.png'),
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Rp. 300.000",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 13),
+                                                    )
+                                                  ],
+                                                ))),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/dress2.png',
+                              width: 125.0,
+                              height: 125.0,
+                            ),
+                            Container(
+                              width: 125.0, // Sesuaikan dengan lebar gambar
+                              child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text("Model Dress 2"),
+                                      Container(
+                                        width: 120.0,
+                                        child: Align(
+                                            alignment: Alignment.topLeft,
+                                            child: OutlinedButton(
+                                                onPressed: null,
+                                                style: OutlinedButton.styleFrom(
+                                                    // Warna latar belakang transparan menggunakan nilai opasitas 0.0
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16.0),
+                                                    ),
+                                                    backgroundColor:
+                                                        Color.fromRGBO(
+                                                            135, 73, 36, 1)),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 15,
+                                                      height: 15,
+                                                      decoration: BoxDecoration(
+                                                        image: DecorationImage(
+                                                          image: AssetImage(
+                                                              'assets/uang.png'),
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Rp. 300.000",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 13),
+                                                    )
+                                                  ],
+                                                ))),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/dress3.png',
+                              width: 125.0,
+                              height: 125.0,
+                            ),
+                            Container(
+                              width: 125.0, // Sesuaikan dengan lebar gambar
+                              child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text("Model Dress 3"),
+                                      Container(
+                                        width: 120.0,
+                                        child: Align(
+                                            alignment: Alignment.topLeft,
+                                            child: OutlinedButton(
+                                                onPressed: null,
+                                                style: OutlinedButton.styleFrom(
+                                                    // Warna latar belakang transparan menggunakan nilai opasitas 0.0
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16.0),
+                                                    ),
+                                                    backgroundColor:
+                                                        Color.fromRGBO(
+                                                            135, 73, 36, 1)),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 15,
+                                                      height: 15,
+                                                      decoration: BoxDecoration(
+                                                        image: DecorationImage(
+                                                          image: AssetImage(
+                                                              'assets/uang.png'),
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Rp. 300.000",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 13),
+                                                    )
+                                                  ],
+                                                ))),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/dress4.png',
+                              width: 125.0,
+                              height: 125.0,
+                            ),
+                            Container(
+                              width: 125.0, // Sesuaikan dengan lebar gambar
+                              child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text("Model Dress 4"),
+                                      Container(
+                                        width: 120.0,
+                                        child: Align(
+                                            alignment: Alignment.topLeft,
+                                            child: OutlinedButton(
+                                                onPressed: null,
+                                                style: OutlinedButton.styleFrom(
+                                                    // Warna latar belakang transparan menggunakan nilai opasitas 0.0
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16.0),
+                                                    ),
+                                                    backgroundColor:
+                                                        Color.fromRGBO(
+                                                            135, 73, 36, 1)),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 15,
+                                                      height: 15,
+                                                      decoration: BoxDecoration(
+                                                        image: DecorationImage(
+                                                          image: AssetImage(
+                                                              'assets/uang.png'),
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Rp. 300.000",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 13),
+                                                    )
+                                                  ],
+                                                ))),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/dress5.png',
+                              width: 125.0,
+                              height: 125.0,
+                            ),
+                            Container(
+                              width: 125.0, // Sesuaikan dengan lebar gambar
+                              child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text("Model Dress 5"),
+                                      Container(
+                                        width: 120.0,
+                                        child: Align(
+                                            alignment: Alignment.topLeft,
+                                            child: OutlinedButton(
+                                                onPressed: null,
+                                                style: OutlinedButton.styleFrom(
+                                                    // Warna latar belakang transparan menggunakan nilai opasitas 0.0
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16.0),
+                                                    ),
+                                                    backgroundColor:
+                                                        Color.fromRGBO(
+                                                            135, 73, 36, 1)),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 15,
+                                                      height: 15,
+                                                      decoration: BoxDecoration(
+                                                        image: DecorationImage(
+                                                          image: AssetImage(
+                                                              'assets/uang.png'),
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Rp. 300.000",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 13),
+                                                    )
+                                                  ],
+                                                ))),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/dress6.png',
+                              width: 125.0,
+                              height: 125.0,
+                            ),
+                            Container(
+                              width: 125.0, // Sesuaikan dengan lebar gambar
+                              child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text("Model Dress 6"),
+                                      Container(
+                                        width: 120.0,
+                                        child: Align(
+                                            alignment: Alignment.topLeft,
+                                            child: OutlinedButton(
+                                                onPressed: null,
+                                                style: OutlinedButton.styleFrom(
+                                                    // Warna latar belakang transparan menggunakan nilai opasitas 0.0
+                                                    shape:
+                                                        RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16.0),
+                                                    ),
+                                                    backgroundColor:
+                                                        Color.fromRGBO(
+                                                            135, 73, 36, 1)),
+                                                child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 15,
+                                                      height: 15,
+                                                      decoration: BoxDecoration(
+                                                        image: DecorationImage(
+                                                          image: AssetImage(
+                                                              'assets/uang.png'),
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Rp. 300.000",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 13),
+                                                    )
+                                                  ],
+                                                ))),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                    width: 300,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(0, 0, 0, 1),
+                      borderRadius: BorderRadius.circular(30),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey, // Warna bayangan
+                          offset: Offset(0, 3), // Geser bayangan sejauh X dan Y
+                          blurRadius: 6, // Jumlah pelebaran bayangan
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        OutlinedButton(
+                          onPressed: null,
+                          child: Container(
+                            width: 35,
+                            height: 35,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/icon-home.png'),
+                                fit: BoxFit.cover,
+                              ),
+                              color: Color.fromRGBO(135, 73, 36, 1),
+                              borderRadius:
+                                  BorderRadius.circular(12.0), // Radius border
+                            ),
+                          ),
+                        ),
+                        OutlinedButton(
+                          onPressed: null,
+                          child: Container(
+                            width: 45,
+                            height: 45,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/icon-basket.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                        OutlinedButton(
+                          onPressed: null,
+                          child: Container(
+                            width: 35,
+                            height: 35,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/icon-dsc.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                        OutlinedButton(
+                          onPressed: null,
+                          child: Container(
+                            width: 35,
+                            height: 35,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/icon-about.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ))
+              ],
+            ),
+            Text("")
+          ],
+        ),
+      ),
+    );
+  }
+}

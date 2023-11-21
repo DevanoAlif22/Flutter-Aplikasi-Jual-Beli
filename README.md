@@ -1,6 +1,7 @@
 # tugas
 
-A new Flutter project.
+UTS Mobile Programming
+Membuat aplikasi jual beli sederhana
 
 ## Getting Started
 
